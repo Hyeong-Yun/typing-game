@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(0deg, #a29bfe 0%, rgba(129,5,240,1) 100%);
+    height: 100vh;
+}
+
+#title{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(58, 56, 56, 0.8);
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
+}
+
+.container{
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    background: transparent;
+    border-radius: 5px;
+    margin: 20px auto;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.word{
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.showing-game{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 20px;
+
+    position: relative;
+}
+.time-left-container{
+    padding: 10px;
+}
+
+.score-container{
+    padding: 10px;
+}
+
+input{
+    padding: 3px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.popup-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+
+    position:relative;
+    margin: auto auto;
+    animation-name: moving;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.popup{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+@keyframes moving {
+    from{
+        width: 200px;
+        transform: scale(0.5) rotate(360deg);
+    }to{
+        width: 300px;
+    }
+}
+
+#reset-btn{
+    padding: 5px 15px;
+    font-size: 1rem;
+    background: transparent;
+    position: relative;
+    left: 22%;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
